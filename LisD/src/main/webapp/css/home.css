@@ -1,0 +1,219 @@
+@charset "UTF-8";
+
+/* browser reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ h1.hometitle{
+ 	margin-left : 50px;	
+ 	width : 95%
+}
+ 
+ 
+ hr.hrstyle {
+  border: 0;
+  border-top: 3px dotted tomato;
+  margin : auto;
+}
+ 
+ 
+ 
+div.home {
+  width: 1500px;
+  height : 800px;
+  margin: 20px auto;
+  background-color: #dadada
+}
+
+div.loginbox{
+	display : flex;
+	justify-content: center;
+	align-items: center;
+}
+
+
+
+/* list styles */
+
+ol {
+  list-style: none;
+  color: tomato;
+}
+
+ol li {
+  font: bold 24pt helvetica, arial, sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+li p {
+  font: 12pt helvetica, arial, sans-serif;
+  color: #555;
+  padding-left: 70px;
+}
+
+span {
+  position: absolute;
+  line-height: 25px;
+  margin-left : 25px ;
+}
+
+p .about {
+	margin-left : 70px;
+}
+
+/* form{
+	display : flex;
+	align-items: center;
+	justify-content: center;
+	
+	margin-top : 50px;
+} */
+
+form .form-control{
+	height : 50px;
+	width : 300px;
+}
+
+form .btn{
+	float : left;
+}
+
+table {
+  border: 1px #a39485 solid;
+  font-size: .9em;
+  box-shadow: 0 2px 5px rgba(0,0,0,.25);
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+th {
+  text-align: left;
+}
+  
+thead {
+  font-weight: bold;
+  color: #fff;
+  background-color: #ff6347;
+}
+  
+ td, th {
+  padding: 1em .5em;
+  vertical-align: middle;
+}
+  
+ td {
+  border-bottom: 1px solid rgba(0,0,0,.1);
+  background: #fff;
+}
+
+a {
+	text-align : center;
+	text-decoration : none;
+	color: #73685d;
+}
+
+.write-btn{
+	clear:both;
+}
+
+  
+ .cmnttable{
+  
+  height : 238px;  
+  overflow: auto;
+ }
+
+.tablebtns{
+	width : 100%;
+	height : 30px;
+	text-align : center;
+	background-color : #EEE;
+}
+
+.listbtns{
+	width : 100%;
+	height : 30px;
+	text-align : center;
+	background-color : #EEE;
+}
+
+ .star {
+    position: relative;
+    font-size: 2rem;
+    color: #ddd;
+  }
+  
+  .star input {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+  
+  .star span {
+    width: 0;
+    position: absolute; 
+    left: 0;
+    color: red;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+
+
+
+  
+ @media all and (max-width: 768px) {
+    
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+  
+  th {
+    text-align: right;
+  }
+  
+  table {
+    position: relative; 
+    padding-bottom: 0;
+    border: none;
+    box-shadow: 0 0 10px rgba(0,0,0,.2);
+  }
+  
+  thead {
+    float: left;
+    white-space: nowrap;
+  }
+  
+  tbody {
+    overflow-x: auto;
+    overflow-y: hidden;
+    position: relative;
+    white-space: nowrap;
+  }
+  
+  tr {
+    display: inline-block;
+    vertical-align: top;
+  }
+  
+  th {
+    border-bottom: 1px solid #a39485;
+  }
+  
+  td {
+    border-bottom: 1px solid #e5e5e5;
+  }
+  
+
+  
+  
+  }
+

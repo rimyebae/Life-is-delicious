@@ -1,0 +1,55 @@
+@charset "UTF-8";
+
+/* browser reset */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+ h1.pagetitle{
+ 	margin-left : 50px;	
+ 	width : 95%
+}
+ 
+ 
+ hr.hrstyle {
+  border: 0;
+  border-top: 3px dotted tomato;
+  margin : auto;
+}
+ 
+ 
+ 
+div.page {
+  width: 1500px;
+  height : 800px;
+  margin: 20px auto;
+  background-color: #dadada
+}
+
+/* list styles */
+
+ol {
+  list-style: none;
+  color: tomato;
+}
+
+ol li {
+  font: bold 24pt helvetica, arial, sans-serif;
+  position: relative;
+  margin-bottom: 20px;
+}
+
+li p {
+  font: 12pt helvetica, arial, sans-serif;
+  color: #555;
+  padding-left: 70px;
+/*   margin-left : px; */
+}
+
+span {
+  position: absolute;
+  line-height: 25px;
+  margin-left : 25px ;
+}
+

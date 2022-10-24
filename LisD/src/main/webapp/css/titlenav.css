@@ -1,0 +1,167 @@
+@charset "UTF-8";
+
+
+
+
+/* title css */
+h1.title { 
+	position: relative; }
+
+h1.title:before,
+h1.title:after {
+  content: '[';
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  height: 100%;
+  font-size: 1.25em;
+  color: tomato;
+  
+  transition: all 0.5s ease;
+}
+
+h1.title:after { content: ']'; }
+
+h1.title:hover:before { 
+  transform: translateX(-5px);
+}
+
+h1.title:hover:after { 
+  transform: translateX(5px);
+}
+
+
+/*
+-----------------
+Normalizing
+-----------------
+*/
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+a:hover,
+a:focus {
+  outline: none;
+}
+
+.menu a {
+  color: rgba(21, 21, 21, 0.8);
+  font-family: tahoma;
+  font-size: 17pt;
+  font-weight: 400;
+  padding: 15px 25px;
+  /**/
+  position: relative;
+  display: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  margin-left : 50px;
+}
+
+ul li {
+	 list-style-type : none;
+	 float: left;
+	 margin : 20px;
+	 }
+
+.SMN_effect-73 a {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+  padding-bottom: 5px;
+}
+.SMN_effect-73 a:after {
+    background: tomato;
+    content: '';
+    height: 2px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    transform: translate3d(-100%, 0, 0);
+    width: 100%;
+}
+.SMN_effect-73 a:hover::after {
+    animation: link-hoverstate .5s linear forwards;
+    animation-timing-function: linear;
+    animation-timing-function: cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+
+@keyframes link-hoverstate {
+ 0% {
+  opacity:1;
+  transform:translate3d(-100%, 0, 0)
+ }
+ 55% {
+  transform:translate3d(100%, 0, 0)
+ }
+ 56% {
+  transform:translate3d(100%, calc(0.5rem + 4px), 0)
+ }
+ 100% {
+  opacity:1;
+  transform:translate3d(0, calc(0.5rem + 4px), 0)
+ }
+}
+
+/* 로그인 회원가입 버튼 */
+button {
+  margin: 5px;
+  outline: none;
+  float : right;
+}
+
+.custom-btn {
+  width: 130px;
+  height: 40px;
+  padding: 5px 10px;
+  border: 4px solid #dadada;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+  display: inline-block;
+}
+
+.btn-2 {
+  
+}
+
+.btn-2:after {
+  position: absolute;
+  content: "";
+  top: 5px;
+  left: 6px;
+  width: 90%;
+  height: 70%;
+  border: 2px solid tomato;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.btn-2:hover:after {
+  opacity: 1;
+}
+
+header{
+	clear:both;
+	margin-left : 50px;
+}
+
+.titlenav{
+	margin-bottom : 20px;
+}
+
+
+
